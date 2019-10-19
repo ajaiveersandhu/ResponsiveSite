@@ -5,7 +5,6 @@
 }
 
 body {
-	height: 100vh;
 	background: rgb(238, 174, 202);
 	background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
 	margin: 0;
@@ -103,6 +102,89 @@ footer p {
 	padding: 0.3rem;
 }
 
-/*
+@media only screen and (max-width: 960px),(min-device-width: 768px) and (max-device-width: 1024px) {
+	header {
+		width: 100%;
+		margin: 1rem auto;
+	}
 
-*/
+	header h1 {
+		text-align: center;
+		font-size: 2.5rem;
+		padding: 0.7rem;
+	}
+
+	main p {
+		width: 94%;
+		font-size: 1rem;
+		padding: 0.8rem;
+		margin: 0.3rem auto;
+	}
+	
+	table, thead, tbody, th, td {
+		display: block;
+		font-size: 1.1rem;
+	}
+	
+	main table tr {
+		display: inline;
+	}
+	
+	main table tr td {
+		position: relative;
+		margin: 0.5rem 0;
+		vertical-align: middle;
+		padding-left: 50%;
+		height: 2rem;
+	}
+	
+	main table tbody tr td:last-child {
+/*		padding-bottom: 10px;*/
+		border-bottom: 1px solid rgba(148, 187, 233, 1);
+		margin-bottom: 0;
+	}
+	
+	main table tr td:hover {
+		background-color: rgba(169, 184, 225, 0.5);
+	}
+	
+	main table thead {
+		display: none;
+	}
+	
+	main tbody tr td::before {
+		position: absolute;
+		width: 45%;
+		left: 1rem;
+		font-size: 1.1rem;
+		padding-right: 50%;
+	}
+	
+	main tbody tr td:nth-child(1)::before {
+		content: "Domain Name";
+	}
+	
+	main tbody tr td:nth-child(2)::before {
+		content: "Setup Fees";
+	}
+	
+	main tbody tr td:nth-child(3)::before {
+		content: "Monthly Fees";
+	}
+	
+	main tbody tr td:nth-child(4)::before {
+		content: "Package Type";
+	}
+	
+	main tbody tr td:nth-child(5)::before {
+		content: "Package Cost";
+	}
+	
+	main tbody tr td:nth-child(6)::before {
+		content: "Disk Space";
+	}
+	
+	main tbody tr td:nth-child(7)::before {
+		content: "Domain Registration";
+	}
+}
