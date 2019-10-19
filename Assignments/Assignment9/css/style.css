@@ -67,7 +67,8 @@ main table tbody {
 }
 
 main table tbody tr {
-	height: 3rem;
+	height: 4rem;
+	padding: 1rem 0;
 	width: auto;
 }
 
@@ -128,20 +129,23 @@ footer p {
 	
 	main table tr {
 		display: inline;
+		margin: 0;
 	}
 	
 	main table tr td {
 		position: relative;
 		margin: 0.5rem 0;
-		vertical-align: middle;
-		padding-left: 50%;
 		height: 2rem;
+		padding: 15px 0 30px 50%;
 	}
 	
 	main table tbody tr td:last-child {
-/*		padding-bottom: 10px;*/
 		border-bottom: 1px solid rgba(148, 187, 233, 1);
-		margin-bottom: 0;
+	}
+	
+	main table tbody tr td:first-child {
+		border-top: 1px solid rgba(148, 187, 233, 1);
+		padding-top: 40px;
 	}
 	
 	main table tr td:hover {
