@@ -1,0 +1,252 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px 12%;
+    background-color: #B9F2CF;
+    font-size: 35px;
+}
+
+.background_image {
+    height: 422px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-family: 'Mansalva', cursive;
+    font-size: 325%;
+    padding-top: 175px;
+    text-align: center;
+    text-shadow: 1px 1px 3px white;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    padding: 0px;
+    list-style-type: none;
+    display: inline-table;
+}
+
+nav ul li {
+    float: left;
+    position: sticky;
+    width: 220px;
+    height: 45px;
+    background-color: black;
+    opacity: 0.85;
+    line-height: 45px;
+    text-align: center;
+    font-size: 75%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.9);
+    display: inline;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+nav ul li ul {
+    margin: 0px;
+}
+
+nav ul li a:hover {
+    background-color: #CC0729;
+    color: black;
+    border-radius: 5px;
+}
+
+nav ul li ul li {
+    display: none;
+    font-size: 75%;
+}
+
+nav ul li:hover ul li {
+    display: block;
+    opacity: 0.95;
+}
+
+#left {
+    margin-top: 60px;
+    margin-right: 2%;
+    width: 18%;
+    float: left;
+}
+
+main #left #today_special {
+    font-family: 'Gochi Hand', cursive;
+    font-size: 145%;
+    text-align: center;
+    /*    border: 1px solid;*/
+    padding: 25px 0px;
+    box-shadow: 5px 5px 10px 2px #CC0729;
+    border-radius: 10px;
+}
+
+
+main #left #reviews {
+    margin-top: 110px;
+    padding: 10px;
+    cursor: default;
+    /*    text-align: center;*/
+}
+
+main #left #reviews img {
+    height: 25px;
+    width: 25px;
+}
+
+main #left #reviews p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+main #left #details {
+    margin-top: 75px;
+}
+
+/*
+main #left #details table {
+    border: 1px solid;
+}
+*/
+
+main #left #details tr td:nth-of-type(1) {
+    text-align: left;
+}
+
+main #left #details td {
+    font-size: 70%;
+    padding: 0px 10px;
+    text-align: right;
+}
+
+main #left #categories {
+    margin-top: 75px;
+    font-size: 70%;
+    padding: 10px;
+}
+
+main #left #categories span {
+    font-size: 80%;
+    background-color: #CC0729;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 10px;
+}
+
+main #left #categories span:hover {
+    background-color: white;
+    color: #CC0729;
+    cursor: default;
+}
+
+
+main #right {
+    margin-top: 60px;
+    margin-left: 2%;
+    width: 78%;
+    float: right;
+    clear: both;
+}
+
+main #right .recipe img {
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+main #right .recipe h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    text-align: left;
+    font-weight: 500;
+}
+
+main #right #ingredients {
+    margin: 25px 0px;
+    padding: 10px;
+/*    border: 1px solid #CC0729;*/
+}
+
+main #right #ingredients h4 {
+    font-size: 120%;
+    font-weight: 300;
+}
+
+main #right #ingredients ol {
+    list-style-type: square;
+    padding-left: 30px;
+    display: inline-table;
+    font-size: 70%;
+}
+
+main #right #directions {
+    margin: 25px 0px;
+    padding: 10px;
+/*    border: 1px solid #CC0729;*/
+}
+
+main #right #directions h4 {
+    font-size: 120%;
+    font-weight: 300;
+}
+
+main #right #directions ol {
+    list-style-type: none;
+    padding-top: 10px;
+/*    padding-left: 30px;*/
+    display: inline-table;
+    font-size: 70%;
+    overflow: scroll;
+}
+
+main #right #directions ol li::before {
+    content: attr(data-list);
+    color: #CC0729;
+    padding: 0px 10px 0px 0px;
+    font-size: 180%;
+/*    font-weight: 900;*/
+    font-family: 'Mansalva', cursive;
+    list-style-position: outside;
+}
+
+main #right #directions ol {
+    line-height: 110%;
+}
+
+main #right #directions ol li:nth-of-type(1) {
+    
+}
+
+main #right #cook-note {
+    margin: 25px 0px;
+    padding: 10px;
+    border: 1px solid #CC0729;
+}
+
+main #right h5 {
+    font-size: 90%;
+    font-weight: 90;
+}
+
+main #right p {
+    font-size: 70%;
+    font-weight: 70;
+}
