@@ -1,0 +1,156 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/Montserrat-Regular.ttf);
+	src: url(../fonts/Montserrat-Medium.ttf);
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+:root {
+	--bg-color: black;
+	--pop-color: #FEA132;
+	--text-color: white;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--text-color);
+	text-align: center;
+}
+
+#container {
+	background-image: url(../imgs/cover.png);
+	height: 100vh;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+header {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4%;
+	font-size: calc(1.5vh + 2.5vw);
+}
+
+header #buzz-letter {
+	position: absolute;
+	left: -50px;
+	top: -30px;
+}
+
+header #letter-slash {
+	position: absolute;
+}
+
+header #quest-letter {
+	position: absolute;
+	top: 30px;
+	right: -70px;
+}
+
+main {
+	align-self: center;
+}
+
+#magazine-name {
+	font-size: calc(3vh + 4vw);
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	word-spacing: 1rem;
+	margin: 3.5% auto;
+	margin-top: 7%;
+}
+
+#enter-site {
+	display: inline-block;
+	padding: 0.9% 1.3%;
+	font-size: 1rem;
+	font-weight: bold;
+	color: black;
+	background: white;
+	text-decoration: none;
+	transition: transform 500ms ease-in;
+}
+
+#enter-site:hover, 
+#enter-site:visited {
+	color: black;
+}
+
+#enter-site:hover {
+	transform: scale(1.1, 1.1);
+}
+
+@media only screen and (max-width: 1140px) {
+	header {
+		margin-top: 8%;
+	}
+
+	header #buzz-letter {
+		position: absolute;
+		left: -40px;
+		top: -25px;
+	}
+
+	header #letter-slash {
+		position: absolute;
+	}
+
+	header #quest-letter {
+		position: absolute;
+		top: 25px;
+		right: -60px;
+	}
+}
+
+@media only screen and (max-width: 1048px) {
+	header {
+		margin-top: 12%;
+	}
+
+	header #buzz-letter {
+		position: absolute;
+		left: -35px;
+		top: -25px;
+	}
+
+	header #letter-slash {
+		position: absolute;
+	}
+
+	header #quest-letter {
+		position: absolute;
+		top: 25px;
+		right: -55px;
+	}
+}
+
+@media only screen and (max-width: 940px) {
+	header {
+		margin-top: 16%;
+	}
+}
+
+@media only screen and (max-width: 876px) {
+	header {
+		margin-top: 20%;
+	}
+}
+
+@media only screen and (max-width: 805px) {
+	header {
+		margin-top: 24%;
+	}
+}
+
+@media only screen and (max-width: 760px) {
+	header {
+		margin-top: 30%;
+	}
+}
+
