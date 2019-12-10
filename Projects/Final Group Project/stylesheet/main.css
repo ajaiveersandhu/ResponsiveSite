@@ -1,0 +1,96 @@
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../fonts/Montserrat-Regular.ttf);
+	src: url(../fonts/Montserrat-Medium.ttf);
+	src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+:root {
+	--bg-color: black;
+	--pop-color: #FEA132;
+	--text-color: white;
+	--faded-text: rgba(97, 96, 96, 0.733);
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+	background: var(--bg-color);
+	color: var(--text-color);
+	text-align: center;
+	/* filter: blur(8px); */
+}
+
+#yellow-card {
+	width: 70vw;
+	height: calc(30vh + 10vw);
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--pop-color);
+	z-index: -1;
+}
+
+header {
+	margin: 1% 1%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+}
+
+#brand-logo {
+	margin-left: 7vw;
+	/* margin-top: 5vh; */
+	justify-self: start;
+	position: relative;
+	/* font-size: calc(1.5vh + 1.5vw); */
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: black;
+}
+
+#brand-logo #buzz-letter {
+	position: absolute;
+	left: -30px;
+	top: -20px;
+}
+
+#brand-logo #letter-slash {
+	position: absolute;
+}
+
+#brand-logo #quest-letter {
+	position: absolute;
+	top: 20px;
+	right: -50px;
+}
+
+#menu-icon {
+	margin-right: 7vw;
+	margin-top: 5vh;
+	justify-self: end;
+}
+
+nav {
+	height: 20vh;
+	width: 4rem;
+	position: fixed;
+	top: 20vh;
+	right: 8vw;
+	text-align: center;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	padding: 1rem 1.5rem;
+	margin-top: 1rem;
+	font-size: 1rem;
+	writing-mode: vertical-rl;
+	color: var(--faded-text);
+}
+
+
+
+
